@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="XDU, CyberSecurity" />
+    <title>
+        Max1z
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Max1z
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Max1z
+        </a>
+    </h1>
+    <h2 class="desc">
+        xiaolin zhang
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a href="https://github.com/zL1nX" target="_blank" rel="noopener">
+                    Github
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://weibo.com/u/6115190104/home" target="_blank" rel="noopener">
+                    weibo
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    <h4 class="post-cat">
+        <a href="/categories/%E7%94%9F%E6%B4%BB/">
+            生活
+        </a>
+    </h4>
+    
+    
+    <h2 class="post-title">
+        观XD校长奖学金答辩有感
+    </h2>
+    <ul class="post-date">
+        <li>
+            2019-11-21
+        </li>
+        <li>
+            max1z
+        </li>
+    </ul>
+    <div class="post-content">
+        <p>被拉去当学生评委去观看了一场由全学校最厉害那撮人组成的奖学金答辩，并且结合自己的答辩经验和观看感想，随便写写。</p>
+<a id="more"></a>
+<h1 id="无需赘述的是"><a href="#无需赘述的是" class="headerlink" title="无需赘述的是"></a>无需赘述的是</h1><ul>
+<li>来参加这个答辩的人都是名副其实的<strong>大佬</strong></li>
+<li>也许他们在均分上、竞赛上、社会实践上有一方面不如你，但是人家突出的那一方面绝对是可以碾压你的存在。<strong>当然，全方位碾压的这种大佬也是存在的</strong>。</li>
+<li>大家都是努力准备了这场答辩的，虽然有的大佬可能不谙此道，会给人一种讲演起来充满锈迹的感觉。但是有的大佬，真的给人一种<strong>优秀的人做什么都很优秀的感觉</strong></li>
+</ul>
+<p><img src="./%E8%A7%82XD%E6%A0%A1%E9%95%BF%E5%A5%96%E5%AD%A6%E9%87%91%E7%AD%94%E8%BE%A9%E6%9C%89%E6%84%9F/IMG_0893.JPG" alt="一位同学的答辩现场"></p>
+<h1 id="想说的是"><a href="#想说的是" class="headerlink" title="想说的是"></a>想说的是</h1><ul>
+<li><p>个别大佬对ppt和演讲稿真的不够重视啊，这可是全校最牛B的人的答辩，说什么也应该仔细雕琢一下ppt吧</p>
+</li>
+<li><p>其中有一位大佬的回答很让我印象深刻</p>
+<ul>
+<li>Q：你是如何平衡学习，竞赛，实践之间的时间的？</li>
+<li>A：“<strong>专注</strong>”，一次做好一件事，尽量不去管其他的事情</li>
+<li>确实，感觉专注才是能做出成绩的最大帮手。极度地专注的确体现到了很多我周围大佬的身上，而我自己也在考虑自己是否有过这样极度专注的时间段。</li>
+</ul>
+</li>
+<li><p>不得不说，人文学院的那位大佬<strong>临场反应</strong>真得很棒，从回答的角度，用词等方面上的确是专业人文社科类选手。</p>
+</li>
+<li><p>评委的问题也很有意思，如果是我会怎么回答呢：</p>
+<ul>
+<li><p>Q：向在场的高中生解释下什么叫做<code>网络安全</code></p>
+</li>
+<li><p>MA: 想必各位都用过QQ吧，如何保护你的QQ不被盗号是网络安全负责的。那各位应该也用过饭卡吧，如何保护你的饭卡不被我克隆然后刷掉你卡里的钱，也是网络安全或网络空间安全负责的。而各位玩游戏的话，有的人会自己写或者买外挂，如何保护游戏厂家的产品不被外挂所侵犯也是网络空间安全负责的事情。网络（空间）安全是包含有网络环境安全，软件安全，硬件安全，系统安全，密码学等方面的一个综合性的，交叉性的学科，它所致力于的就是保护在如今的网络虚拟空间（CyberSpace）中用户的有价值的信息不被未授权的角色所利用（一点improvision，勿喷🍻</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="总而言之呢"><a href="#总而言之呢" class="headerlink" title="总而言之呢"></a>总而言之呢</h1><ul>
+<li>很明显，XD这次是想弄一个类似于清华特奖答辩那样的自己的<code>学神奖学金答辩会</code>，但是明显感到16级有很多大佬都没参加。这个答辩会请的学生评委也是一言难尽（比如我这种弟弟。</li>
+<li>不过通过观摩这些大佬的事迹，也确实发现这些人在对自己生活上要求都很高，熬夜通宵是很常见的事，而且对于问题的解决态度是十分值得赞叹的，他们不像是T大那些神仙选手一样高不可攀，毕竟当你每晚12:00前就聊天打屁开始睡觉，真能指望到和他们一样成为自己学校的天花板吗？</li>
+</ul>
+<p>​    </p>
+
+    </div>
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/leisure/">leisure</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%A6%E8%81%94%E7%BD%91/">车联网</a></li></ul>
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Omnetpp/" rel="tag">Omnetpp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Openssl/" rel="tag">Openssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug-fixed/" rel="tag">bug fixed</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test-hexo-github-blog/" rel="tag">test, hexo, github, blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%BF%E7%9C%9F/" rel="tag">仿真</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%A6%E8%81%94%E7%BD%91/" rel="tag">车联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%B2%E6%9D%82/" rel="tag">闲杂</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

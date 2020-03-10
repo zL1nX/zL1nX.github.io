@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="XDU, CyberSecurity" />
+    <title>
+        Max1z
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Max1z
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Max1z
+        </a>
+    </h1>
+    <h2 class="desc">
+        xiaolin zhang
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a href="https://github.com/zL1nX" target="_blank" rel="noopener">
+                    Github
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://weibo.com/u/6115190104/home" target="_blank" rel="noopener">
+                    weibo
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    <h4 class="post-cat">
+        <a href="/categories/leisure/">
+            leisure
+        </a>
+    </h4>
+    
+    
+    <h2 class="post-title">
+        Hello, World
+    </h2>
+    <ul class="post-date">
+        <li>
+            2019-10-28
+        </li>
+        <li>
+            max1z
+        </li>
+    </ul>
+    <div class="post-content">
+        <p>作为第一篇博客，需要写一些感人肺腑的废话</p>
+<a id="more"></a>
+
+<h1 id="Aloha"><a href="#Aloha" class="headerlink" title="Aloha"></a>Aloha</h1><ul>
+<li>博客的测试页面</li>
+<li>原有的VPS不能用了，遂尝试Github+hexo搭建</li>
+<li>写文章看天，文章主题随缘</li>
+</ul>
+<h1 id="Be-Happy"><a href="#Be-Happy" class="headerlink" title="Be Happy"></a>Be Happy</h1><ul>
+<li>关于本博客，希望可以长期维护，搭建教程网上都有</li>
+<li>关于本人，希望可以长期被维护</li>
+<li>博客主题不定期更换</li>
+</ul>
+<h1 id="Could"><a href="#Could" class="headerlink" title="Could"></a>Could</h1><ul>
+<li>搭建过程中有一些问题，可以先记录下来<ul>
+<li>域名解析之后<code>404</code>了：看域名解析商和Github仓库的setting</li>
+<li>换主题时根目录<code>_config.yml</code>是全局的，记得存档，一般不会大改</li>
+<li><code>hexo s</code>报错了，看提示链接里的内容，再想想自己刚才有没有删什么npm包</li>
+</ul>
+</li>
+<li>博客只是一个窗口，不要judge，不要幻想，安心混日子</li>
+</ul>
+<h1 id="Die-Hard"><a href="#Die-Hard" class="headerlink" title="Die Hard"></a>Die Hard</h1><blockquote>
+<p>Work until you do not introduce yourself.</p>
+</blockquote>
+<ul>
+<li>愿世界和平，我的朋友</li>
+</ul>
+
+    </div>
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/leisure/">leisure</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%A6%E8%81%94%E7%BD%91/">车联网</a></li></ul>
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Omnetpp/" rel="tag">Omnetpp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Openssl/" rel="tag">Openssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug-fixed/" rel="tag">bug fixed</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test-hexo-github-blog/" rel="tag">test, hexo, github, blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%BF%E7%9C%9F/" rel="tag">仿真</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%A6%E8%81%94%E7%BD%91/" rel="tag">车联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%B2%E6%9D%82/" rel="tag">闲杂</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
