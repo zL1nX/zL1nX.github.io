@@ -118,40 +118,104 @@
     </div>
 </header>
         <main class="main">
-            
-<section class="posts">
+            <article class="post">
     
-        <article class="post">
-            
-                <h4 class="post-cat">
-                    <a href="/categories/leisure/">
-                        leisure
-                    </a>
-                </h4>
-                
-                    <h1 class="post-title">
-                        <a href="/2019/10/28/Hello-World-0/">
-                            Hello, World
-                        </a>
-                    </h1>
+    
+    <h4 class="post-cat">
+        <a href="/categories/%E4%B8%96%E7%95%8C%E7%9C%9F%E5%A5%87%E5%A6%99/">
+            世界真奇妙
+        </a>
+    </h4>
+    
+    
+    <h2 class="post-title">
+        在Mac中使用Automator的一些神奇操作
+    </h2>
+    <ul class="post-date">
+        <li>
+            2020-03-13
+        </li>
+        <li>
+            max1z
+        </li>
+    </ul>
+    <div class="post-content">
+        <p>“扛炮bot”可能是OS X上最Geek的一个原生应用了，有时候某些工具软件或者操作执行需要重复性的而且不易记住的操作。这时Automator就可以帮助我们减少很多不必要的操作了。</p>
+<a id="more"></a>
 
-                    <ul class="post-date">
-                        <li>
-                            2019年10月28日
-                        </li>
-                        <li>
-                            max1z
-                        </li>
-                    </ul>
-                    
-                    <div class="post-content ">
-                        <p>作为第一篇博客，需要写一些感人肺腑的废话</p>
-                            <a href="/2019/10/28/Hello-World-0/" class="more-link">Continue reading</a>
-                    </div>
-        </article>
-        
-</section>
-
+<h1 id="Automator在哪"><a href="#Automator在哪" class="headerlink" title="Automator在哪"></a>Automator在哪</h1><ul>
+<li>四指聚拢到触摸板上，好似对着触摸板比划了一次拥有意大利特色风情的手势，于是你就打开了调度中心</li>
+<li>找到扛着钢炮的英俊机器人，于是你就打开了Automator</li>
+<li>图片</li>
+<li>在Automator中，我们可以新建工作流、服务、应用程序等，具体而言就是：<ul>
+<li>定制你自己的快捷操作和快捷键</li>
+<li>定制你自己的应用程序（不需要繁杂的开发过程）</li>
+<li>定制你自己的自动任务</li>
+<li>而以上这些操作的实现组件都由OS X帮你定义好了，你只用像拼乐高一样将他们恰当的组装起来（🐂🍺</li>
+</ul>
+</li>
+</ul>
+<h1 id="我的Mac上的Automator操作"><a href="#我的Mac上的Automator操作" class="headerlink" title="我的Mac上的Automator操作"></a>我的Mac上的Automator操作</h1><ul>
+<li>不定期补充，完全随缘</li>
+</ul>
+<h2 id="自动上传Hexo博客"><a href="#自动上传Hexo博客" class="headerlink" title="自动上传Hexo博客"></a>自动上传Hexo博客</h2><ul>
+<li><p>因为每次写完Hexo博客，多半你都需要执行一串诸如<code>hexo clean</code>，<code>hexo generate</code>，<code>hexo deploy</code>的指令。</p>
+<ul>
+<li>每次更新博客都要输入吗？要的</li>
+<li>这些指令复杂吗？好像不是很复杂</li>
+<li>所以可以用Shell脚本 + Automator自动上传脚本</li>
+</ul>
+</li>
+<li><p>Automator创建步骤</p>
+<blockquote>
+<p>拢共就三步</p>
+</blockquote>
+<ul>
+<li><strong>打开Automator</strong>，选择<code>服务</code>的齿轮状⚙️按钮，你可以看到左边有很多项目<ul>
+<li>插一张图</li>
+</ul>
+</li>
+<li>选择<code>执行Shell</code>脚本，拖着它无情地<strong>丢到右边</strong>。万事开头难，你已经成功了一半</li>
+<li>接下来需要<strong>输入Shell指令</strong>。众所周知，Shell脚本无非是一些「终端命令」+「终端语法」的结合产物，而这里我们只需要让它简单的顺序执行几条命令就行，因此只用把你要用的「终端命令」乖乖列好就对了<ul>
+<li>pp</li>
+<li>如图所示，其实你已经完成了所有工作，是否为自己的动手才能感到牛逼🍻</li>
+</ul>
+</li>
+<li><em>附加步骤</em>：如果你像让Automator干完所有工作能吆喝你一声「Yo，I am Done，Human」，可以在左侧选择<code>通知</code>，然后无情丢到你的Shell命令下方。<ul>
+<li>选择合适的标题和信息，完成后记得<strong>保存</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Automator执行步骤</p>
+<ul>
+<li><p>恭喜聪明的你已经创建了属于自己的服务，接下来的问题就是如何执行它</p>
+<blockquote>
+<p>拢共也三步</p>
+</blockquote>
+</li>
+<li><p>Automator内测试：保存之后，选择右上角的「执行」按钮，确保可以执行。</p>
+</li>
+<li><p>快捷键设置：在上一步完成后，打开「系统偏好设置」中的「键盘」中的「快捷键」</p>
+<ul>
+<li>然后找啊找，找到你刚保存的服务</li>
+<li>然后设置快捷键，注意不要和其他服务设置重复，因为你的新快捷键并不会把前浪拍死</li>
+<li>插一张图</li>
+</ul>
+</li>
+<li><p>正式测试：快捷键测试好后，你就可以假装「哎呀，我写好博客了，要自动化上传了诶」，然后按下跟你预谋已久的快捷键，完成一次么得灵魂的工作。</p>
+<ul>
+<li>插一张图</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>诚然，这篇博客也是趁热自动上传的🍻</p>
+</li>
+</ul>
+<h2 id="PDF合并"><a href="#PDF合并" class="headerlink" title="PDF合并"></a>PDF合并</h2>
+    </div>
+</article>
         </main>
         <aside class="aside">
             <div class="close"></div>
